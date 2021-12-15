@@ -23,12 +23,20 @@ namespace movies_app
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+       /* public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
 
             services.AddDbContext<movies_appContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("movies_appContext")));
+        }*/
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddRazorPages();
+
+            services.AddDbContext<movies_appContext>(options =>
+              options.UseSqlServer(Configuration.GetConnectionString("movies_appContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

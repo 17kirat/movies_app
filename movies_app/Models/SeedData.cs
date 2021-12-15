@@ -26,7 +26,8 @@ namespace movies_app.Models
                         Title = "Lucy",
                         ReleaseDate = DateTime.Parse("1989-2-12"),
                         Genre = "Romantic Comedy",
-                        Price = 7.99M
+                        Price = 7.99M,
+                        //Rating = "R"
                     },
 
                     new Movie
@@ -34,7 +35,8 @@ namespace movies_app.Models
                         Title = "7Signs ",
                         ReleaseDate = DateTime.Parse("2001-3-13"),
                         Genre = "Comedy",
-                        Price = 8.99M
+                        Price = 8.99M,
+                        //Rating = "R"
                     },
 
                     new Movie
@@ -42,7 +44,8 @@ namespace movies_app.Models
                         Title = "The Hero",
                         ReleaseDate = DateTime.Parse("2004-2-23"),
                         Genre = "Comedy",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        //Rating = "R"
                     },
 
                     new Movie
@@ -50,7 +53,8 @@ namespace movies_app.Models
                         Title = "Red Dog",
                         ReleaseDate = DateTime.Parse("2021-11-15"),
                         Genre = "Western",
-                        Price = 3.99M
+                        Price = 3.99M,
+                        //Rating = "R"
                     }
                 );
                 context.SaveChanges();
